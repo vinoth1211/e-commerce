@@ -7,6 +7,7 @@
     --colo-white-1: #FFFFFF;
     --colo-white-2: #F5F5F5;
     --colo-yellow-1:#F4B740;
+    --colo-green: #00FF66;
 }
 
 *{
@@ -291,4 +292,68 @@ ul{
     color: var(--colo-white-1);
     padding: 1.6rem 3rem;
     border-radius: 0.5rem;
+}
+
+/* categories */
+.categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.category{
+    text-align: center;
+    padding: 3rem;
+    border: 1px solid var(--colo-dark-2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category:hover{
+    background-color: var(--colo-primary);
+}
+
+.category_icon{
+    width: 3.5rem;
+    height: auto;
+}
+
+/* trending */
+.trending{
+    background-color: var(--colo-dark-1);
+    padding: 8rem 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.trending_img{
+    width: 100%;
+}
+
+.trending_p{
+    color: var(--colo-green);
+}
+
+.trending_title{
+    color: var(--colo-white-1);
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.trending_btn{
+    background-color: var(--colo-green);
+    padding: 1rem 2rem;
+    color: var(--colo-white-2);
+}
+
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 2rem;
 }
