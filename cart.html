@@ -1,131 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Cart - Exclusive</title>
-</head>
-<body>
-<div class="top_nav">
-    <div class="container top_nav_container">
+  </head>
+  <body>
+    <div class="top_nav">
+      <div class="container top_nav_container">
         <div class="top_nav_wrapper">
-            <p class="top_nav_p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-            <a href="" class="top_nav_link">SHOP NOW</a>
+          <p class="top_nav_p">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+          <a href="" class="top_nav_link">SHOP NOW</a>
         </div>
+      </div>
     </div>
-</div>
-<nav class="nav">
-    <div class="container nav_container">
+    <nav class="nav">
+      <div class="container nav_container">
         <a href="" class="nav_logo">EXCLUSIVE</a>
         <ul class="nav_list">
-            <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
-            <li class="nav_item"><a href="" class="nav_link">About</a></li>
-            <li class="nav_item"><a href="" class="nav_link">Contact</a></li>
-            <li class="nav_item"><a href="" class="nav_link">Sign up</a></li>
+          <li class="nav_item">
+            <a href="index.html" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item"><a href="" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="" class="nav_link">Contact</a></li>
+          <li class="nav_item"><a href="" class="nav_link">Sign up</a></li>
         </ul>
         <div class="nav_items">
-            <form action="" class="nav_form">
-                <input type="text" class="nav_input" placeholder="Search here...."><img src="./assets/search.png" alt="" class="nav_search">
-            </form>
-            <img src="./assets/heart.png" alt="" class="nav_heart">
-            <a href="cart.html">
-                <img src="./assets/cart.png" alt="" class="nav_cart">
-            </a>
+          <form action="" class="nav_form">
+            <input
+              type="text"
+              class="nav_input"
+              placeholder="Search here...."
+            /><img src="./assets/search.png" alt="" class="nav_search" />
+          </form>
+          <img src="./assets/heart.png" alt="" class="nav_heart" />
+          <a href="cart.html">
+            <img src="./assets/cart.png" alt="" class="nav_cart" />
+          </a>
         </div>
         <span class="hamburger">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </span>
-    </div>
-</nav>
-<nav class="mobile_nav mobile_nav_hide">
-  <ul class="mobile_nav_list">
-    <li class="mobile_nav_item">
-        <a href="index.html" class="mobile_nav_link">Home</a>
-    </li>
-    <li class="mobile_nav_item">
-        <a href="" class="mobile_nav_link">About</a>
-    </li>
-    <li class="mobile_nav_item">
-        <a href="" class="mobile_nav_link">Contact</a>
-    </li>
-    <li class="mobile_nav_item">
-        <a href="" class="mobile_nav_link">Sign Up</a>
-    </li>
-    <li class="mobile_nav_item">
-        <a href="cart.html" class="mobile_nav_link">Cart</a>
-    </li>
-  </ul>
-</nav>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="index.html" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="" class="mobile_nav_link">About</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="" class="mobile_nav_link">Contact</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="" class="mobile_nav_link">Sign Up</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="cart.html" class="mobile_nav_link">Cart</a>
+        </li>
+      </ul>
+    </nav>
 
-<section class="section">
-    <div class="container">
+    <section class="section">
+      <div class="container">
         <div class="cart">
-            <div class="cart_header">
-                <p class="cart_header_title">Product</p>
-                <p class="cart_header_title">Product Image</p>
-                <p class="cart_header_title">Price</p>
-                <p class="cart_header_title">Quantity</p>
-                <p class="cart_header_title">Subtotal</p>
-            </div>
-            <div class="cart_item">
-                    <span class="cart_item_title">H1 Gamepad</span>
-                    <img src="./assets/item-1.png" alt="" class="cart_img">
-                <div class="cart_item_price">$120</div>
-                <input type="text" class="cart_item_qty">
-                <p class="cart_item_subtotal">$120</p>
-            </div>
-            <div class="cart_total">
-                <p class="cart_total_p">$2000</p>
-            </div>
+          <div class="cart_header">
+            <p class="cart_header_id">Product</p>
+            <p class="cart_header_title">Product Image</p>
+            <p class="cart_header_image">Price</p>
+            <p class="cart_header_price">Quantity</p>
+            <p class="cart_header_delete">Delete</p>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart_total">
+            <p class="cart_total_p">Total: $2000</p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer class="footer">
-  <div class="container footer_container">
-    <div class="footer_item">
-      <a href="" class="footer_logo">Exclusive</a>
-      <div class="footer_p">Subscribe to get updates on new arrivals, discounts and special offers.</div>
-    </div>
-    <div class="footer_item">
-      <h3 class="footer_item_title">Support</h3>
-      <ul class="footer_list">
-        <li class="li footer_list_item">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</li>
-        <li class="li footer_list_item">exclusive@gmail.com</li>
-        <li class="li footer_list_item">+88015-88888-9999</li>
-        <li class="li footer_list_item">+88015-88888-9998</li>
-      </ul>
-    </div>
-    <div class="footer_item">
-      <h3 class="footer_item_title">Account</h3>
-      <ul class="footer_list">
-        <li class="li footer_list_item">My Account</li>
-        <li class="li footer_list_item">Login / Register</li>
-        <li class="li footer_list_item">Cart</li>
-        <li class="li footer_list_item">Shop</li>
-      </ul>
-    </div>
-    <div class="footer_item">
-      <h3 class="footer_item_title">Quick Link</h3>
-      <ul class="footer_list">
-        <li class="li footer_list_item">Privacy Policy</li>
-        <li class="li footer_list_item">Terms Of Use</li>
-        <li class="li footer_list_item">FAQ</li>
-        <li class="li footer_list_item">Contact</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer_bottom">
-    <div class="container footer_bottom_container">
-      <p class="footer_copy">©Copyright Rimel 2022. All right reserved</p>
-    </div>
-  </div>
-</footer>
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="" class="footer_logo">Exclusive</a>
+          <div class="footer_p">
+            Subscribe to get updates on new arrivals, discounts and special
+            offers.
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">
+              111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+            </li>
+            <li class="li footer_list_item">exclusive@gmail.com</li>
+            <li class="li footer_list_item">+88015-88888-9999</li>
+            <li class="li footer_list_item">+88015-88888-9998</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Account</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">My Account</li>
+            <li class="li footer_list_item">Login / Register</li>
+            <li class="li footer_list_item">Cart</li>
+            <li class="li footer_list_item">Shop</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Quick Link</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Privacy Policy</li>
+            <li class="li footer_list_item">Terms Of Use</li>
+            <li class="li footer_list_item">FAQ</li>
+            <li class="li footer_list_item">Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">©Copyright Rimel 2022. All right reserved</p>
+        </div>
+      </div>
+    </footer>
 
-    <script src="./js/app.js"></script>
-</body>
+    <script src="./js/cart.js"></script>
+  </body>
 </html>

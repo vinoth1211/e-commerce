@@ -600,3 +600,13 @@ ul{
     margin-top: 2rem;
     text-align: right;
 }
+
+.add_to_cart{
+    padding: 1rem 2rem;
+    background-color: var(--colo-primary);
+    color: var(--colo-white-1);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 2rem;
+}
