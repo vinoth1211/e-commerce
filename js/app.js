@@ -2,8 +2,7 @@
 var countDownDate = new Date("April 5, 2025 15:37:25").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
+var x = setInterval(function () {
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -17,8 +16,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
@@ -50,65 +49,64 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-  // Animations
+// Animations
 
-  ScrollReveal().reveal(".top_nav",{
-    origin:"bottom",
-    distance:"20px",
-    opacity:0,
-  })
+ScrollReveal().reveal(".top_nav", {
+  origin: "bottom",
+  distance: "20px",
+  opacity: 0,
+});
 
-  ScrollReveal().reveal(".nav",{
-    origin:"bottom",
-    distance:"20px",
-    opacity:0,
-    delay: 100,
-  })
+ScrollReveal().reveal(".nav", {
+  origin: "bottom",
+  distance: "20px",
+  opacity: 0,
+  delay: 100,
+});
 
-  ScrollReveal().reveal(".header",{
-    origin:"bottom",
-    distance:"20px",
-    opacity:0,
-    delay: 200,
-  })
+ScrollReveal().reveal(".header", {
+  origin: "bottom",
+  distance: "20px",
+  opacity: 0,
+  delay: 200,
+});
 
-  ScrollReveal().reveal(".section",{
-    origin:"bottom",
-    distance:"20px",
-    opacity:0,
-    duration: 1000,
-    delay: 100,
-  })
+ScrollReveal().reveal(".section", {
+  origin: "bottom",
+  distance: "20px",
+  opacity: 0,
+  duration: 1000,
+  delay: 100,
+});
 
-  ScrollReveal().reveal(".footer",{
-    origin:"bottom",
-    distance:"20px",
-    opacity:0,
-    duration: 1000,
-    delay: 100,
-  })
+ScrollReveal().reveal(".footer", {
+  origin: "bottom",
+  distance: "20px",
+  opacity: 0,
+  duration: 1000,
+  delay: 100,
+});
 
-  // mobile nav
-  const hamburger = document.querySelector(".hamburger");
-  const Nav = document.querySelector(".mobile_nav");
+// mobile nav
+const hamburger = document.querySelector(".hamburger");
+const Nav = document.querySelector(".mobile_nav");
 
-  hamburger.addEventListener("click", () => {
-    Nav.classList.toggle("mobile_nav_hide");
+hamburger.addEventListener("click", () => {
+  Nav.classList.toggle("mobile_nav_hide");
+});
+
+const AddToCart = document.querySelectorAll(".add_to_cart");
+
+AddToCart.forEach((button) => {
+  button.addEventListener("click", () => {
+    const id = button.getAttribute("data-id");
+    const title = button.getAttribute("data-title");
+    const image = button.getAttribute("data-image");
+    const price = button.getAttribute("data-price");
+
+    const cartItem = { id, title, image, price };
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(cartItem);
+    localStorage.setItem("cart", JSON.stringify(cart));
   });
-
-
-  const AddToCart = document.querySelectorAll(".add_to_cart");
-
-  AddToCart.forEach((button) => {
-    button.addEventListener("click", () => {
-      const id = button.getAttribute("data-id");
-      const title = button.getAttribute("data-title");
-      const image = button.getAttribute("data-image");
-      const price = button.getAttribute("data-price");
-
-      const cartItem = { id, title, image, price };
-      const cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push(cartItem);
-      localStorage.setItem("cart", JSON.stringify(cart));
-    });
-  });
+});
