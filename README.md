@@ -110,4 +110,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For any queries or support, please reach out through the contact page on the website.
+For any queries or support, please reach out.
